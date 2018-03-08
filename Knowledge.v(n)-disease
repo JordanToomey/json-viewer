@@ -1,0 +1,48 @@
+{
+  "@graph" : [ {
+    "@id" : "elsi:disease_D001249",
+    "@type" : "elsi:Disease",
+    "name" : "asthma",
+    "provenance" : "http://data.elsevier.com/ingest/opentarget/provenance"
+  }, {
+    "@id" : "organization:_opentarget",
+    "@type" : "foaf:Organization",
+    "name" : "organization_opentarget"
+  }, {
+    "@id" : "supplier:_opentarget",
+    "@type" : "elsi:Supplier",
+    "name" : "supplier_opentarget"
+  }, {
+    "@id" : "http://data.elsevier.com/ingest/opentarget/provenance",
+    "@type" : "elsi:Provenance",
+    "organization" : "organization:_opentarget",
+    "supplier" : "supplier:_opentarget"
+  } ],
+  "@context" : {
+    "supplier" : {
+      "@id" : "http://data.elsevier.com/elsi.owl#supplier",
+      "@type" : "@id"
+    },
+    "organization" : {
+      "@id" : "http://data.elsevier.com/elsi.owl#organization",
+      "@type" : "@id"
+    },
+    "name" : {
+      "@id" : "http://data.elsevier.com/elsi.owl#name"
+    },
+    "provenance" : {
+      "@id" : "http://purl.org/dc/terms/provenance",
+      "@type" : "@id"
+    },
+    "opentarget" : "http://data.elsevier.com/opentarget.owl#",
+    "elsi" : "http://data.elsevier.com/elsi.owl#",
+    "disease" : "http://data.elsevier.com/disease.owl#",
+    "dct" : "http://purl.org/dc/terms/",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "prov" : "http://www.w3.org/ns/prov#",
+    "foaf" : "http://xmlns.com/foaf/spec/",
+    "prism" : "http://prismstandard.org/namespaces/1.2/basic/",
+    "target" : "http://data.elsevier.com/target.owl#"
+  }
+}
